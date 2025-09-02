@@ -1,0 +1,75 @@
+.ofertas_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 100px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #780BF7;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;   
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px; /* altura fixa para uniformizar todos os cards */
+  transition: all 0.5s ease-out;
+}
+
+.product-card img {
+  width: 200px;
+  height: 120px; /* tamanho fixo */
+  object-fit: contain; /* garante que a imagem se encaixe sem distorcer */
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.product-card button{
+    padding: 8px 24px; /* tamanho de botão */
+    border-radius: 34px;
+    background-color: #8FFF24;
+    border-color: #8FFF24;
+    font-size: 18px;
+}
+
+/* Animação de hover */
+.product-card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card em 5% */
+}
+.btn {
+    background-color: #25034A;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease, 0.2s ease;
+    margin-left: 48.5%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.btn:hover {
+    background-color: #780BF7;
+    transform: scale(1.05);
+}

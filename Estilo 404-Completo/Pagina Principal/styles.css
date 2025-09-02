@@ -1,0 +1,29 @@
+:root {
+    --cor-texto-principal: #0B254B;
+    --cor-texto-secundario: #5E6E89;
+    --cor-texto: #EFEFEF;
+    --fonte-texto: "Poppins", sans-serif;
+    --fonte-titulo: "Orbitron", sans-serif;
+
+    --cor-links: #090129;
+
+    --cor-destaque-principal: #FF55DF;
+    --cor-destaque-secundario: #8FFF24;
+
+    --cor-fundo-botao: #780BF7;
+    --cor-fundo-roxo: #25034A
+    --cor-de-fundo: #FFFFFF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+

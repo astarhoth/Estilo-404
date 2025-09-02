@@ -1,0 +1,82 @@
+.banner{
+    background-color: var(--cor-links);
+    width: 100%;         /* Ocupa toda a largura da tela */
+    height: 55vh;
+}
+
+.banner_camisa img{
+    width: 55vh;
+}
+.banner_camisa{
+    padding: 30px 5px 0 0; 
+    position: relative;
+    z-index: 2;
+}
+
+.banner_texto_frase{
+    color: #ffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 60px;
+}
+.banner_texto_frase span{
+    color:#780BF7 ;
+}
+.banner_conjunto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner_botao button{
+    margin-top: 40vh;
+    margin-left: -12vh;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 32px;
+    background-color: #8FFF24;
+    font-family: var(--fonte-texto); 
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+button:hover {
+    transform: translateY(-0.5px); /* Sobe 5 pixels */
+  }
+@media screen and (max-width: 768px){
+    .banner{
+        height: 100vh;
+    }
+    .banner_conjunto {
+    display: flex;
+    flex-direction: column; /* organiza em coluna */
+    align-items: center; /* centraliza horizontalmente */
+    text-align: center; /* centraliza o texto */
+    padding: 20px;
+    }
+
+    .banner_camisa img {
+        max-width: 100%;
+        height: auto;
+        width: 45vh;
+    }
+
+    .banner_texto_frase {
+        font-size: 2rem;
+        color: white;
+        margin: 20px 0;
+    }
+
+    .banner_botao button {
+        background-color: #c5ff00;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 20px;
+        margin-top: 2px;
+        margin-right: 10px;
+    }
+    .banner_texto_frase{
+        font-size: 55px;
+    }
+    }

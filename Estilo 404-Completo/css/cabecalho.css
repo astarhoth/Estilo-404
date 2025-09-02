@@ -1,0 +1,83 @@
+.cabecalho_nav_list{
+    display: grid;
+    grid-template-columns: 1fr auto 50% auto auto auto;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
+.cabecalho{
+    padding: 0.5px 10% ;
+    width: 100%;
+}
+.cabecalho_logo img{
+    width: 100px;
+    height: 100px;
+}
+.cabecalho_nav_list_link{
+    font-size: 20px;
+    line-height: 24px; /* Espaçamento entre as linhas*/
+    text-decoration: none;
+    color: var(--cor-links);
+    font-family: var(--fonte-texto);
+}
+
+.cabecalho_nav_list_item_input{
+    position:relative;
+}
+.cabecalho_nav_list_item-input{
+    width: 100%;
+    height: 50%;
+    padding: 5px 20px;
+    box-sizing: border-box;/* largura total do elemento será de 200px (incluindo paddinge border). */
+    background-color: var(--cor-texto);
+    border-radius: 32px;
+    border:none;
+    font-size: 20px;
+    line-height: 45px;
+    color: var(--cor-links);
+    text-decoration: none;
+}
+.pesquisa-icon{
+    position: absolute;
+    right: 30%;
+    top: 7.5%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px){
+    .cabecalho_nav_list{
+        grid-template-areas:
+        "logo sobre login perfil carrinho"
+        "input input input input input"
+        ;
+        grid-template-columns: 1fr 2fr .5fr .5fr .5fr;
+    }
+    .cabecalho_logo{
+        grid-area: logo;
+        justify-self: center;
+    }
+    .cabecalho_nav_list_item-sobre{
+        grid-area: sobre;
+
+    }
+    .cabecalho_nav_list_item-login{
+        grid-area: login;
+    }
+    .cabecalho_nav_list_item-perfil{
+        grid-area: perfil;
+
+    }
+    .cabecalho_nav_list_item-carrinho{
+        grid-area: carrinho;
+    }
+    .cabecalho_nav_list_item-input{
+        grid-area: input;
+        height:50%;
+        margin-bottom: 5%;
+    }
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./css/cabecalho.css">
+<link rel="stylesheet" href="./css/rodape.css">
+<link rel="stylesheet" href="./css/catalogo.css">
+<link rel="icon" type="image/png" href="../Pagina Principal/assets/logo.png">
+</head>
+<body>
+   <header class="cabecalho">
+    <nav class="cabecalho_nav">
+        <ul class="cabecalho_nav_list">
+            <li>
+                <a href="../Pagina Principal/index.html"    class="cabecalho_logo">
+                    <img src="./assets/logo.png" alt="Logo"  >
+                </a>
+            </li>   
+            <li class="cabecalho_nav_list_item">
+                <a href="#" class="cabecalho_nav_list_link">
+                    Catalogo
+                </a>
+            </li> 
+            <li class="cabecalho_nav_list_item cabecalho_nav_list_item-input">
+                <input type="search" id="busca" placeholder="O que você procura?" class="cabecalho_nav_list_item-input">
+            </li>
+            <li>
+                <a href="../login/login.html" class="cabecalho_nav_list_link cabecalho_nav_list_link-login">Login
+                </a>
+            </li>
+           <li class="cabecalho_nav_list_item cabecalho_nav_list_item-carrinho">
+            <a href="../Pagina Principal/carrinho.html" class="cabecalho_nav_list_link cabecalho_nav_list_link-carrinho">
+                <img src="./assets/icons/carrinho.svg" alt="carrinho">
+            </a>
+</li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+     <section class="Ofertas">
+        <h2 class="ofertas_titulo">Catálogo</h2>
+        <div id="product-container"></div>
+    </section>
+
+   </main>
+   
+    <footer class="rodape">
+        <div class="rodape_linha">
+            
+            <div class="rodape_coluna rodape_coluna_logo">
+                <img src="./assets/logo.png" alt="UseDev logo">
+                <p class="rodape_coluna_logo_texto">Hora de abraçar seu lado geek</p>  
+            </div>
+        
+           
+            <div class="rodape_coluna">
+                <h5 class="rodape_coluna_titulo">Funcionamento</h5>
+                <ul class="rodape_coluna_list">
+                    <li class="rodape_coluna_list_item">Segunda a Sexta - 8h às 18h</li>
+                    <li class="rodape_coluna_list_item">
+                        <a class="rodape_coluna_link" href="mailto:sac@usedev.com">sac@estilo404.com</a>
+                    </li>
+                    <li class="rodape_coluna_list_item">
+                        <a class="rodape_coluna_link" href="tel:+550800541320">0800541320</a>
+                    </li>
+                </ul>
+            </div>
+        
+           
+            <div class="rodape_coluna">
+                <h5 class="rodape_coluna_titulo">Institucional</h5>
+                <nav class="rodape_coluna_nav">
+                    <ul class="rodape_coluna_list">
+                        <li class="rodape_coluna_list_item"><a class="rodape_coluna_link" href="#">Sobre nós</a></li>
+                        <li class="rodape_coluna_list_item"><a class="rodape_coluna_link" href="#">Contato</a></li>
+                        <li class="rodape_coluna_list_item"><a class="rodape_coluna_link" href="#">Política de Privacidade</a></li>
+                        <li class="rodape_coluna_list_item"><a class="rodape_coluna_link" href="#">LGPD - Lei de proteção de dados</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+        
+        <div class="rodape_linha">
+           
+            <div class="rodape_coluna">
+                <h5 class="rodape_coluna_titulo">Formas de pagamento</h5>
+                <ul class="rodape_coluna_list_cartao">
+                    <li class="rodape_coluna_list_item_cartao">
+                        <img src="./assets/icons/icon-cartao-visa.svg" alt="Visa">
+                    </li>
+                    <li class="rodape_coluna_list_item_cartao">
+                        <img src="./assets/icons/icon-cartao-master.svg" alt="Mastercard">
+                    </li>
+                    <li class="rodape_coluna_list_item_cartao">
+                        <img src="./assets/icons/icon-cartao-elo.svg" alt="Elo">
+                    </li>
+                    <li class="rodape_coluna_list_item_cartao">
+                        <img src="./assets/icons/icon-cartao-diners.svg" alt="Diners">
+                    </li>
+                    <li class="rodape_coluna_list_item_cartao">
+                        <img src="./assets/icons/icon-pix.svg" alt="Pix">
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="rodape_coluna">
+                <h5 class="rodape_coluna_titulo">Siga nossas redes</h5>
+                <ul class="rodape_coluna_list_redes_sociais">
+                    <li class="rodape_coluna_list_item_redes_sociais">
+                        <img src="./assets/icons/whatsapp.svg" alt="WhatsApp">
+                    </li>
+                    <li class="rodape_coluna_list_item_redes_sociais">
+                        <img src="./assets/icons/instagram.svg" alt="Instagram">
+                    </li>
+                    <li class="rodape_coluna_list_item_redes_sociais">
+                        <img src="./assets/icons/tiktok.svg" alt="TikTok">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+<script src="catalogo.js"></script>
+</html>

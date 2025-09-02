@@ -1,0 +1,165 @@
+h1{
+  margin-left: 7%;
+  margin-top: 2%;
+  font-family: "Orbitron", sans-serif;
+}
+body{
+  font-family: "Poppins", sans-serif;;
+}
+main{
+  margin-bottom: 5%;
+}
+#carrinho-container {
+  width: 65%;
+  padding: 2rem;
+  float: left;
+  margin-left: 4%;
+}
+.linha{
+  width: 25%;
+  height: 5px;
+  margin-left: 7%;
+  background-color:#25034A;
+}
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  margin-left: 2%;
+}
+
+.item-carrinho img {
+  width: 80px;
+  height: auto;
+}
+
+.item-carrinho .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-carrinho h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+
+.item-carrinho p {
+  margin: 0;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantidade button {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.subtotal {
+  font-weight: bold;
+  min-width: 100px;
+  text-align: right;
+}
+
+.remover {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.resumo-pedido {
+  width: 25%;
+  float: right;
+  padding: 2rem;
+  background-color: #f6f6f6;
+  border-radius: 30px;
+  margin-top: 2rem;
+  margin-right: 3%;
+
+}
+
+.resumo-pedido h2 {
+  margin-bottom: 1rem;
+}
+
+.resumo-pedido p {
+  margin: 0.5rem 0;
+}
+
+.resumo-pedido .btn-finalizar {
+  background-color: #8FFF24;
+  color: rgb(0, 0, 0);
+  padding: 0.7rem 1rem;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s ease, 0.4s ease;
+}
+.btn-finalizar:hover{
+    background-color: #25034A;
+    color: white;
+    transform: scale(1.05);
+}
+
+.mensagem-final {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+  z-index: 1001;
+  font-size: 18px;
+  display: none;
+}
+
+.fundo-escuro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  display: none;
+}
+.Fechar_mensagem{
+    padding: 10px 10px;
+    border: none;
+    font-size: 18px;
+    margin-top:7px;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #25034A;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .resumo-pedido{
+    margin-right: 15vh;
+    width: 70%;
+  }
+  .item-carrinho{
+    width: 50%;
+  }
+}

@@ -1,0 +1,340 @@
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      color: #000;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 30%;
+      background-color: rgba(37, 3, 74, 1);
+      color: #ccc;
+      border-top-right-radius: 40px;
+      height: 970px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      position: relative;
+    }
+
+    .sidebar img {
+      width: 158px;
+      height: 158px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h2 {
+      font-family: 'Jura', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      color: rgba(57, 255, 20, 1);
+      text-align: center;
+      margin: 10px 0 30px 0;
+    }
+
+    .sidebar nav {
+      width: 100%;
+    }
+
+    .sidebar nav a {
+      display: block;
+      font-family: 'Jura', sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      color: #fff;
+      padding-left: 28px;
+      margin-top: 40px;
+      position: relative;
+      width: fit-content;
+      text-decoration: none;
+    }
+
+    .sidebar nav a::after {
+      content: '';
+      position: absolute;
+      left: 28px;
+      bottom: -8px;
+      width: 170px;
+      height: 2px;
+      background-color: #fff;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      background-color: #fff;
+      padding: 40px;
+    }
+
+    .main h1 {
+      font-family: 'Jura', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      color: #000;
+      text-transform: uppercase;
+      margin: 0 auto 30px auto;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #000;
+      display: table;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .search-box input {
+      width: 300px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 20px;
+      background-color: #eee;
+      font-size: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    thead {
+      background-color: #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    td:last-child {
+      background-color: #ccc;
+      cursor: pointer;
+    }
+
+    td:last-child:hover {
+      background-color: #aaa;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        border-top-right-radius: 0;
+        text-align: center;
+      }
+
+      .sidebar h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .sidebar img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+
+      .sidebar nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .sidebar nav a {
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 0;
+      }
+
+      .sidebar nav a::after {
+        display: none;
+      }
+
+      .main {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .main h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #000;
+        display: table;
+      }
+
+      .search-box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .search-box input {
+        width: 90%;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+      }
+
+      td {
+        text-align: left;
+        padding: 8px 10px;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      td:last-child {
+        text-align: center;
+      }
+    }
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    border-top-right-radius: 0;
+    text-align: center;
+  }
+
+  .sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .sidebar nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .sidebar nav a {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  .sidebar nav a::after {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+    display: table;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box input {
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  td {
+    text-align: left;
+    padding: 8px 10px;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  td:last-child {
+    text-align: center;
+  }
+}
+
+
+
+

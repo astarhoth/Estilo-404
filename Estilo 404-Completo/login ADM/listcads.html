@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contas Cadastradas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./listaem.css">
+
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="../Pagina Principal/index.html"><img src="../logo.png" alt="Logo Estilo 404" class="logo"></a>
+    <h2>ADMINISTRADOR</h2>
+    <nav>
+      <a href="#">Contas cadastradas</a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <h1>CONTAS CADASTRADAS</h1>
+
+    <div class="search-box">
+      <input type="text" id="buscar" placeholder="🔍 Buscar usuário">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NOME</th>
+          <th>EMAIL</th>
+          <th>SENHA</th>
+          <th>CEP</th>
+          <th>ENDEREÇO</th>
+         
+        </tr>
+      </thead>
+      <tbody id="tabelaUsuarios">
+        <!-- Preenchido pelo JavaScript -->
+      </tbody>
+    </table>
+  </div>
+   <script src="./listagem.js"></script>
+</body>
+</html>
